@@ -2,10 +2,12 @@ backend:
   name: github
   repo: PopCoaster/popcoaster
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-media_folder: "images"
-public_folder: "/images"
+  auth_type: implicit
+  app_id: Ov23litIBMVoO3k8HJdi
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
 collections:
   - name: "posts"
     label: "Articles"
@@ -13,9 +15,9 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Catégorie", name: "categorie", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Chapeau", name: "chapeau", widget: "text"}
-      - {label: "Corps de l’article", name: "body", widget: "markdown"}
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Catégorie", name: "categorie", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Chapeau", name: "chapeau", widget: "text" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
