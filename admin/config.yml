@@ -2,14 +2,9 @@ backend:
   name: github
   repo: PopCoaster/popcoaster
   branch: main
-  auth_type: token
-  token: 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
-  site_domain: https://popcoaster.github.io/popcoaster
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
-
-publish_mode: editorial_workflow
 
 collections:
   - name: "posts"
