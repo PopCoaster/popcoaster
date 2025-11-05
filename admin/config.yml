@@ -6,9 +6,7 @@ backend:
   token: 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
   site_domain: https://popcoaster.github.io/popcoaster
 
-
-
-media_folder: "images/uploads" # où les images sont stockées
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 publish_mode: editorial_workflow
@@ -26,7 +24,3 @@ collections:
       - { label: "Chapeau", name: "chapeau", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Contenu", name: "body", widget: "markdown" }
-
-
-
-
