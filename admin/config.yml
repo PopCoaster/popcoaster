@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: PopCoaster/popcoaster
   branch: main
+
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -21,3 +23,4 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Chapeau", name: "chapeau", widget: "string" }
       - { label: "Contenu", name: "body", widget: "markdown" }
+
