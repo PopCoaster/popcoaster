@@ -1,66 +1,78 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pop Coaster | Parcs d'attractions & Pop Culture</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>PopCoaster - Parcs d’attractions & pop culture</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
   <header>
-    <img src="images/logo.png" alt="Pop Coaster logo" class="logo" />
+    <div class="logo">🎢 <span>POP</span>COASTER</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Parcs d’attractions</a>
+      <a href="#">Pop</a>
+      <a href="#">À propos</a>
+    </nav>
   </header>
 
-
-  <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Parcs d'attractions</a>
-    <a href="#">Pop</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
-  </nav>
-
-
-  <main id="main-content">
-    <section id="intro">
-      <h1>Bienvenue sur Pop Coaster 🎢</h1>
-      <p>Le média qui mêle <strong>parcs d'attractions</strong> et <strong>pop culture</strong>.</p>
+  <main>
+    <!-- Section Mise en avant -->
+    <section class="featured">
+      <h2>À la une</h2>
+      <div class="featured-grid">
+        <article>
+          <img src="images/une1.jpg" alt="Attraction futuriste">
+          <div class="overlay">
+            <span class="category">Innovation</span>
+            <h3>La nouvelle attraction VR qui affole les parcs</h3>
+          </div>
+        </article>
+        <article>
+          <img src="images/une2.jpg" alt="Pop culture événement">
+          <div class="overlay">
+            <span class="category">Pop</span>
+            <h3>Le crossover Marvel x Disney arrive au cinéma</h3>
+          </div>
+        </article>
+        <article>
+          <img src="images/une3.jpg" alt="Coulisses du Parc Astérix">
+          <div class="overlay">
+            <span class="category">Parcs</span>
+            <h3>Dans les coulisses du Parc Astérix : les secrets d’Halloween</h3>
+          </div>
+        </article>
+      </div>
     </section>
 
-
-    <section id="articles">
-      <h2>Derniers articles</h2>
-      <div id="post-list"></div>
+    <!-- Section Dernières actualités -->
+    <section class="latest">
+      <h2>Dernières actualités</h2>
+      <div class="latest-list">
+        <article>
+          <img src="images/article1.jpg" alt="Star Academy">
+          <div>
+            <span class="category">TV</span>
+            <h3><a href="post.html">Star Academy : 9 nominés pour le prime du 7 novembre</a></h3>
+            <p>Comment l’émission va-t-elle éliminer un élève ? On décrypte les stratégies de la production...</p>
+          </div>
+        </article>
+        <article>
+          <img src="images/article2.jpg" alt="Disney+ All’s Fair">
+          <div>
+            <span class="category">Séries</span>
+            <h3><a href="post.html">"Pire série de l’année" : Ryan Murphy divise les fans sur Disney+</a></h3>
+            <p>Un lancement attendu, mais un accueil mitigé : la nouvelle série d’anthologie fait débat.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
-
   <footer>
-    © 2025 Pop Coaster — Parcs d’attractions & Pop Culture
+    <p>© 2025 PopCoaster - Le média qui mêle parcs d’attractions et pop culture 🎠</p>
   </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    async function loadPosts() {
-      const container = document.getElementById('post-list');
-      const files = ['premier-article.md'];
-
-
-      for (const file of files) {
-        const res = await fetch('posts/' + file);
-        const text = await res.text();
-        const html = marked.parse(text);
-        const article = document.createElement('article');
-        article.classList.add('article');
-        article.innerHTML = html;
-        container.appendChild(article);
-      }
-    }
-    loadPosts();
-  </script>
 </body>
 </html>
