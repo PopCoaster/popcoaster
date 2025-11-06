@@ -133,7 +133,44 @@
   <footer>
     <p>© 2025 PopCoaster - Le média qui mêle parcs d’attractions et pop culture 🎠</p>
   </footer>
+<!-- 🌙 FOOTER POPCOASTER -->
+<footer style="background-color:#111; color:#fff; padding:40px 20px; font-family:'Poppins',sans-serif; text-align:center; border-top:2px solid #ffcc00; margin-top:60px;">
+  <div style="max-width:900px; margin:0 auto;">
+    <h3 style="font-weight:600; color:#ffcc00; margin-bottom:20px;">🎢 POPCOASTER</h3>
+
+    <p style="color:#ccc; font-size:15px; margin-bottom:30px;">
+      Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture.<br>
+      Disney, Parc Astérix, Universal, DLRP, films, séries et culture geek !
+    </p>
+
+    <!-- Réseaux sociaux -->
+    <div style="margin-bottom:25px;">
+      <a href="https://www.instagram.com/pop.coaster" target="_blank" style="margin:0 10px; color:#fff; text-decoration:none; transition:color 0.3s;">Instagram</a>
+      |
+      <a href="https://www.tiktok.com/@pop_coaster" target="_blank" style="margin:0 10px; color:#fff; text-decoration:none; transition:color 0.3s;">TikTok</a>
+      |
+      <a href="https://x.com/pop_coaster" target="_blank" style="margin:0 10px; color:#fff; text-decoration:none; transition:color 0.3s;">X (Twitter)</a>
+    </div>
+
+    <!-- Mentions légales -->
+    <p style="margin-bottom:25px; font-size:14px;">
+      <a href="/mentions-legales.html" style="color:#ffcc00; text-decoration:none;">Mentions légales</a> 
+      • Hébergé par <a href="https://vercel.com" target="_blank" style="color:#ffcc00; text-decoration:none;">Vercel</a>
+    </p>
+
+    <!-- Copyright -->
+    <p style="font-size:13px; color:#888;">
+      © <span id="year"></span> PopCoaster. Tous droits réservés.
+    </p>
+  </div>
+</footer>
+
+<!-- Script pour l’année dynamique -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
+
 
 
