@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À propos - PopCoaster</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Découvrez l'histoire et le concept de PopCoaster, le média qui fait le grand huit entre parcs d’attractions et pop culture.">
-  <link rel="canonical" href="https://popcoaster.com/a-propos.html">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos – PopCoaster</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Découvrez PopCoaster, le média français dédié aux parcs d’attractions et à la pop culture. Actus, tests, reportages et bons plans pour les passionnés." />
 </head>
-<!-- 🌐 NAVIGATION POPCOASTER -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">🎢 PopCoaster</a>
-
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-      ☰
-    </button>
-
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="a-propos.html">À propos</a></li>
-      <li><a href="mentions-legales.html">Mentions légales</a></li>
-    </ul>
-  </div>
-</nav>
 
 <body>
-  <header style="text-align:center; margin:40px 0;">
-    <h1 style="color:#ffcc00;">À propos de PopCoaster</h1>
-  </header>
 
-  <main style="max-width:900px; margin:auto; padding:20px; color:#eee; line-height:1.8;">
-    
-    <section style="margin-bottom:40px;">
-      <h2 style="color:#ffcc00;">🎢 Le concept</h2>
-      <p>
-        <strong>PopCoaster</strong> est un média né d’une passion : celle des <strong>parcs d’attractions</strong> et de la <strong>pop culture</strong>.
-        Entre deux montagnes russes, on explore tout ce qui fait vibrer nos émotions : les attractions, les films, les séries, les jeux vidéo,
-        les univers qui nous font rêver et frissonner.
-      </p>
-      <p>
-        L’idée est simple : créer un espace où se croisent les fans de sensations fortes et les amoureux de culture geek.
-        Un média positif, fun, exigeant et curieux.  
-      </p>
-    </section>
-
-    <section style="margin-bottom:40px;">
-      <h2 style="color:#ffcc00;">👋 L’auteur</h2>
-      <p>
-        Derrière PopCoaster se cache <strong>Thibault Raoult</strong>, journaliste et rédacteur en chef passionné par la pop culture et les univers immersifs.
-        Après avoir couvert des dizaines d’événements liés au cinéma, aux séries et aux parcs d’attractions,
-        il a voulu réunir ces deux mondes sous une même bannière : celle du grand huit des émotions.
-      </p>
-      <p>
-        PopCoaster, c’est donc un projet à taille humaine, alimenté par la curiosité, l’humour et le plaisir de partager.
-      </p>
-    </section>
-
-    <section style="margin-bottom:40px;">
-      <h2 style="color:#ffcc00;">💡 La ligne éditoriale</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li>🎠 Actus et coulisses des parcs d’attractions (Disney, Astérix, Futuroscope, Universal, etc.)</li>
-        <li>🍿 Pop culture, cinéma, séries et divertissement global</li>
-        <li>🌍 Reportages, interviews, découvertes et tests d’expériences immersives</li>
-        <li>🚀 Un ton moderne, accessible, sans jargon</li>
+  <!-- 🌐 NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Logo PopCoaster" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html" class="active">À propos</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section>
-      <h2 style="color:#ffcc00;">📬 Contact</h2>
-      <p>
-        Pour toute demande (collaboration, info, suggestion), tu peux écrire à :
-        <a href="mailto:contact@popcoaster.com" style="color:#ffcc00;">contact@popcoaster.com</a>
-      </p>
-      <p>
-        Tu peux aussi suivre PopCoaster sur :
-      </p>
-      <ul style="list-style:none; padding-left:0;">
-        <li><a href="https://www.instagram.com/pop.coaster" target="_blank" style="color:#ffcc00;">Instagram</a></li>
-        <li><a href="https://www.tiktok.com/@pop_coaster" target="_blank" style="color:#ffcc00;">TikTok</a></li>
-        <li><a href="https://x.com/pop_coaster" target="_blank" style="color:#ffcc00;">X (Twitter)</a></li>
+  <!-- 🎢 CONTENU PRINCIPAL -->
+  <main class="about">
+    <section class="about-container">
+      <h1>À propos de PopCoaster</h1>
+
+      <p><strong>PopCoaster</strong> est un média indépendant français consacré à l’univers des <strong>parcs d’attractions</strong> et de la <strong>pop culture</strong>.  
+      Notre mission : partager l’actualité, les nouveautés, les tests et les histoires qui font vibrer les fans de sensations fortes et de divertissement.</p>
+
+      <p>Né de la passion d’un journaliste pour les <em>roller coasters</em>, les films cultes et les grandes licences, PopCoaster s’adresse à tous ceux qui veulent suivre de près les coulisses du divertissement mondial.</p>
+
+      <h2>🎢 Ce que vous trouverez ici</h2>
+      <ul>
+        <li>🗞️ Les dernières <strong>news</strong> sur Disneyland Paris, le Parc Astérix, le Futuroscope, Universal et bien d’autres.</li>
+        <li>🎡 Des <strong>tests d’attractions</strong> et d’événements saisonniers (Halloween, Noël, anniversaires de parcs...).</li>
+        <li>🍿 Des <strong>articles pop culture</strong> : cinéma, séries, jeux vidéo et univers geeks.</li>
+        <li>📸 Des <strong>reportages et vidéos</strong> immersifs sur nos réseaux sociaux.</li>
       </ul>
-    </section>
 
+      <h2>📍 Nos valeurs</h2>
+      <p>PopCoaster se veut un espace <strong>positif, accessible et authentique</strong>.  
+      Notre ton est enthousiaste mais honnête, entre passion et regard journalistique.  
+      Nous croyons que la culture du fun mérite le même sérieux que la culture tout court.</p>
+
+      <blockquote>“Entre un looping et un générique de série, on trouve toujours de quoi rêver.”</blockquote>
+
+      <h2>📬 Nous contacter</h2>
+      <p>Pour toute question, collaboration, ou simple mot gentil :</p>
+      <ul>
+        <li>📧 <a href="mailto:contact@popcoaster.com">contact@popcoaster.com</a></li>
+        <li>🐦 <a href="https://x.com/pop_coaster" target="_blank">@pop_coaster</a></li>
+        <li>📸 <a href="https://instagram.com/pop.coaster" target="_blank">@pop.coaster</a></li>
+      </ul>
+
+    </section>
   </main>
 
-  <footer style="text-align:center; margin:50px 0; font-size:14px; color:#888;">
-    © <span id="year"></span> PopCoaster. Tous droits réservés.
+  <!-- 🔻 FOOTER -->
+  <footer>
+    <p style="font-size:13px; color:#888;">
+      © <span id="year"></span> PopCoaster. Tous droits réservés.
+      | <a href="mentions-legales.html" style="color:#ffcc00; text-decoration:none;">Mentions légales</a>
+      | <a href="a-propos.html" style="color:#ffcc00; text-decoration:none;">À propos</a>
+    </p>
   </footer>
 
+  <!-- ✅ Scripts -->
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
   </script>
+
 </body>
 </html>
