@@ -67,4 +67,18 @@ footer {
   padding: 20px;
   opacity: 0.8;
   border-top: 1px solid rgba(255,255,255,0.1);
+
+}
+/* === Footer PopCoaster === */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffcc00;
+}
+footer {
+  line-height: 1.6;
 }
