@@ -3,192 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PopCoaster - Parcs d’attractions & pop culture</title>
+  <title>PopCoaster – Parcs d’attractions & Pop Culture</title>
+
+  <!-- ✅ CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- 🌐 META & SEO DE BASE -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="PopCoaster - Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture. Retrouvez l’essentiel de l’actu Disney, Parc Astérix, Futuroscope, PortAventura, cinéma et séries.">
-<meta name="author" content="PopCoaster">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#ffcc00">
 
-<!-- 🧭 SEO & GOOGLE DISCOVER -->
-<link rel="canonical" href="https://popcoaster.com" />
-<meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <!-- ✅ Typo -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-<!-- 🧠 OPEN GRAPH (Facebook / LinkedIn / Discord) -->
-<meta property="og:title" content="PopCoaster - Actus parcs d’attractions et pop culture">
-<meta property="og:description" content="Toute l’actualité des parcs d’attractions, Disney, Astérix, Universal et de la pop culture mondiale.">
-<meta property="og:image" content="https://popcoaster.com/images/logo.png">
-<meta property="og:url" content="https://popcoaster.com">
-<meta property="og:site_name" content="PopCoaster">
-<meta property="og:type" content="website">
+  <!-- ✅ META SEO -->
+  <meta name="description" content="PopCoaster – Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture. Retrouvez l’essentiel de l’actu Disney, Parc Astérix, Futuroscope, PortAventura, films, séries et culture geek !" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ffcc00" />
 
-<!-- 🐦 TWITTER CARD -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PopCoaster - Parcs d’attractions & pop culture">
-<meta name="twitter:description" content="Toute l’actu des parcs d’attractions, des films et de la culture pop.">
-<meta name="twitter:image" content="https://popcoaster.com/images/logo.png">
-<meta name="twitter:site" content="@pop_coaster">
+  <!-- ✅ OPEN GRAPH -->
+  <meta property="og:title" content="PopCoaster – Actus parcs d’attractions et pop culture" />
+  <meta property="og:description" content="Toute l’actualité des parcs Disney, Astérix, Universal, Futuroscope et de la culture pop." />
+  <meta property="og:image" content="https://popcoaster.com/images/logo.png" />
+  <meta property="og:url" content="https://popcoaster.com" />
+  <meta property="og:type" content="website" />
 
-<!-- 🔗 FAVICON -->
-<link rel="icon" href="https://popcoaster.com/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://popcoaster.com/images/logo.png">
+  <!-- ✅ TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PopCoaster – Parcs d’attractions & pop culture" />
+  <meta name="twitter:description" content="Toute l’actualité des parcs d’attractions, des films et de la culture pop." />
+  <meta name="twitter:image" content="https://popcoaster.com/images/logo.png" />
+  <meta name="twitter:site" content="@pop_coaster" />
 
-<!-- 🔍 STRUCTURED DATA (GOOGLE) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsMediaOrganization",
-  "name": "PopCoaster",
-  "url": "https://popcoaster.com",
-  "logo": "https://popcoaster.com/images/logo.png",
-  "sameAs": [
-    "https://www.instagram.com/pop.coaster",
-    "https://www.tiktok.com/@pop_coaster",
-    "https://x.com/pop_coaster"
-  ]
-}
-</script>
+  <!-- ✅ FAVICON -->
+  <link rel="icon" href="https://popcoaster.com/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="https://popcoaster.com/images/logo.png" />
 
-<!-- 🧩 GOOGLE ANALYTICS (ajouter ton ID plus tard) -->
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
--->
-
-<title>PopCoaster - Parcs d’attractions & Pop Culture</title>
+  <!-- ✅ STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "PopCoaster",
+    "url": "https://popcoaster.com",
+    "logo": "https://popcoaster.com/images/logo.png",
+    "sameAs": ["https://x.com/pop_coaster", "https://www.instagram.com/pop.coaster", "https://www.tiktok.com/@pop_coaster"]
+  }
+  </script>
 </head>
-<!-- 🌐 NAVIGATION POPCOASTER -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">🎢 PopCoaster</a>
 
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-      ☰
-    </button>
+<body>
 
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="a-propos.html">À propos</a></li>
-      <li><a href="mentions-legales.html">Mentions légales</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <body>
-  <header>
-    <div class="logo">🎢 <span>POP</span>COASTER</div>
-    <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Parcs d’attractions</a>
-      <a href="#">Pop</a>
-      <a href="#">À propos</a>
-    </nav>
-  </header>
+  <!-- 🌐 NAVIGATION POPCOASTER -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">🎢 PopCoaster</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main>
-    <!-- Section Mise en avant -->
-    <section class="featured">
-      <h2>À la une</h2>
-      <div class="featured-grid">
-        <article>
-          <img src="images/une1.jpg" alt="Attraction futuriste">
-          <div class="overlay">
-            <span class="category">Innovation</span>
-            <h3>La nouvelle attraction VR qui affole les parcs</h3>
-          </div>
-        </article>
-        <article>
-          <img src="images/une2.jpg" alt="Pop culture événement">
-          <div class="overlay">
-            <span class="category">Pop</span>
-            <h3>Le crossover Marvel x Disney arrive au cinéma</h3>
-          </div>
-        </article>
-        <article>
-          <img src="images/une3.jpg" alt="Coulisses du Parc Astérix">
-          <div class="overlay">
-            <span class="category">Parcs</span>
-            <h3>Dans les coulisses du Parc Astérix : les secrets d’Halloween</h3>
-          </div>
-        </article>
-      </div>
+    <section>
+      <h1>Bienvenue sur PopCoaster 🎢</h1>
+      <p>Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture. <br>
+      Disney, Parc Astérix, Futuroscope, PortAventura, films, séries et culture geek !</p>
     </section>
 
-    <!-- Section Dernières actualités -->
-    <section class="latest">
-      <h2>Dernières actualités</h2>
-      <div class="latest-list">
-        <article>
-          <img src="images/article1.jpg" alt="Star Academy">
-          <div>
-            <span class="category">TV</span>
-            <h3><a href="post.html">Star Academy : 9 nominés pour le prime du 7 novembre</a></h3>
-            <p>Comment l’émission va-t-elle éliminer un élève ? On décrypte les stratégies de la production...</p>
-          </div>
-        </article>
-        <article>
-          <img src="images/article2.jpg" alt="Disney+ All’s Fair">
-          <div>
-            <span class="category">Séries</span>
-            <h3><a href="post.html">"Pire série de l’année" : Ryan Murphy divise les fans sur Disney+</a></h3>
-            <p>Un lancement attendu, mais un accueil mitigé : la nouvelle série d’anthologie fait débat.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+    <!-- Ici viendront les articles dynamiques -->
   </main>
 
   <footer>
-    <p>© 2025 PopCoaster - Le média qui mêle parcs d’attractions et pop culture 🎠</p>
+    <p style="font-size:13px; color:#888;">
+      © <span id="year"></span> PopCoaster. Tous droits réservés.
+      | <a href="mentions-legales.html" style="color:#ffcc00; text-decoration:none;">Mentions légales</a>
+      | <a href="a-propos.html" style="color:#ffcc00; text-decoration:none;">À propos</a>
+    </p>
   </footer>
-<!-- 🌙 FOOTER POPCOASTER -->
-<footer class="footer-popcoaster">
-  <div class="footer-container">
-    <h3>🎢 POPCOASTER</h3>
 
-    <p class="footer-description">
-      Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture.<br>
-      Disney, Parc Astérix, Futuroscope, PortAventura, Universal, films, séries et culture geek !
-    </p>
+  <!-- ✅ Script pour l’année automatique -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-    <div class="footer-socials">
-      <a href="https://www.instagram.com/pop.coaster" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@pop_coaster" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://x.com/pop_coaster" target="_blank" rel="noopener">X (Twitter)</a>
-    </div>
+  <!-- ✅ Script du menu mobile -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-    <p class="footer-mentions">
-      <a href="/mentions-legales.html">Mentions légales</a> • Hébergé par 
-      <a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a>
-    </p>
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 
-    <p class="footer-copy">© <span id="year"></span> PopCoaster. Tous droits réservés.</p>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-
-<!-- Script pour l’année dynamique -->
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
-
-
-
-
-
-
