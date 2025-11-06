@@ -92,16 +92,42 @@
     </div>
   </section>
 
-  <!-- 📰 CONTENU PRINCIPAL -->
-  <main>
-    <section>
-      <h1>Bienvenue sur PopCoaster 🎢</h1>
-      <p>Actus, secrets et nouveautés autour des parcs d’attractions et de la pop culture.<br>
-      Disney, Parc Astérix, Futuroscope, PortAventura, films, séries et culture geek !</p>
-    </section>
+  <!-- 📰 DERNIERS ARTICLES -->
+  <section class="latest-articles">
+    <h2>🗞️ Derniers articles</h2>
 
-    <!-- Ici viendront plus tard les “derniers articles” -->
-  </main>
+    <article class="article-row">
+      <img src="images/disneyland-paris.jpg" alt="Disneyland Paris prépare sa grande parade de Noël">
+      <div class="article-content">
+        <h3>Disneyland Paris prépare sa grande parade de Noël 2025</h3>
+        <p>La magie des fêtes arrive dès le mois de novembre à Disneyland Paris. Décorations, shows et surprises attendent les visiteurs.</p>
+        <a href="posts/disneyland-noel.html" class="read-more">Lire l’article</a>
+      </div>
+    </article>
+
+    <article class="article-row">
+      <img src="images/universal-orlando.jpg" alt="Universal Orlando annonce une extension Harry Potter">
+      <div class="article-content">
+        <h3>Universal Orlando annonce une extension Harry Potter spectaculaire</h3>
+        <p>De nouveaux décors, des effets spéciaux inédits et une attraction à couper le souffle… Universal repousse encore les limites.</p>
+        <a href="posts/universal-hp.html" class="read-more">Lire l’article</a>
+      </div>
+    </article>
+
+    <article class="article-row">
+      <img src="images/film-disney.jpg" alt="Le nouveau film Disney inspiré des montagnes russes">
+      <div class="article-content">
+        <h3>Le nouveau film Disney inspiré des montagnes russes</h3>
+        <p>Disney dévoile un long métrage directement inspiré des attractions à sensations fortes. Sortie prévue en 2026 sur grand écran.</p>
+        <a href="posts/film-disney.html" class="read-more">Lire l’article</a>
+      </div>
+    </article>
+
+    <!-- 🟡 Bouton “Voir tous les articles” -->
+    <div class="see-all">
+      <a href="articles.html" class="see-all-btn">Voir tous les articles</a>
+    </div>
+  </section>
 
   <!-- 🔻 FOOTER -->
   <footer>
@@ -121,7 +147,6 @@
   <script>
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
-
     navToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
