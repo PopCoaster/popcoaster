@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tous les articles – PopCoaster</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <meta name="description" content="Retrouvez tous les articles de PopCoaster : actualités, tests et découvertes autour des parcs d’attractions et de la pop culture." />
+</head>
+
+<body>
+
+  <!-- 🌐 NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Logo PopCoaster" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 📰 TITRE PRINCIPAL -->
+  <header class="articles-header">
+    <h1>🗞️ Tous les articles</h1>
+    <p>Découvrez toutes nos publications classées par univers</p>
+
+    <!-- SOUS-MENU FILTRE -->
+    <div class="articles-filters">
+      <button class="filter-btn active" data-category="all">Tout</button>
+      <button class="filter-btn" data-category="parcs">🎢 Parcs d’attractions</button>
+      <button class="filter-btn" data-category="pop">🍿 Pop Culture</button>
+    </div>
+  </header>
+
+  <!-- 🧩 LISTE DES ARTICLES -->
+  <main class="articles-list">
+
+    <!-- === PARCS D'ATTRACTIONS === -->
+    <article class="article-card" data-category="parcs">
+      <img src="images/asterix-halloween.jpg" alt="Halloween au Parc Astérix">
+      <h3>Halloween au Parc Astérix : monstres et frissons garantis</h3>
+      <p>Les nouvelles maisons hantées du parc ont fait hurler les visiteurs. On vous dit pourquoi c’est une réussite.</p>
+      <a href="posts/asterix-halloween.html" class="read-more">Lire</a>
+    </article>
+
+    <article class="article-card" data-category="parcs">
+      <img src="images/futuroscope.jpg" alt="Nouvelle attraction au Futuroscope">
+      <h3>Le Futuroscope dévoile sa nouvelle attraction futuriste</h3>
+      <p>Une expérience immersive mêlant sensations fortes et technologies de pointe.</p>
+      <a href="posts/futuroscope.html" class="read-more">Lire</a>
+    </article>
+
+    <article class="article-card" data-category="parcs">
+      <img src="images/portaventura-noel.jpg" alt="Noël à PortAventura">
+      <h3>Noël à PortAventura : magie et montagnes russes</h3>
+      <p>Une ambiance féerique, des shows lumineux et un marché de Noël XXL pour petits et grands.</p>
+      <a href="posts/portaventura-noel.html" class="read-more">Lire</a>
+    </article>
+
+    <article class="article-card" data-category="parcs">
+      <img src="images/disneyland-paris.jpg" alt="Disneyland Paris prépare Noël">
+      <h3>Disneyland Paris prépare sa grande parade de Noël</h3>
+      <p>Les décorations et les personnages se préparent à illuminer la saison des fêtes.</p>
+      <a href="posts/disneyland-noel.html" class="read-more">Lire</a>
+    </article>
+
+    <!-- === POP CULTURE === -->
+    <article class="article-card" data-category="pop">
+      <img src="images/film-disney.jpg" alt="Nouveau film Disney">
+      <h3>Le nouveau film Disney inspiré des montagnes russes</h3>
+      <p>Une production originale mêlant aventure, émotions et vitesse.</p>
+      <a href="posts/film-disney.html" class="read-more">Lire</a>
+    </article>
+
+    <article class="article-card" data-category="pop">
+      <img src="images/series-marvel.jpg" alt="Nouvelle série Marvel sur Disney+">
+      <h3>Une nouvelle série Marvel arrive sur Disney+ en 2026</h3>
+      <p>Les fans de super-héros vont être servis : un spin-off audacieux centré sur un personnage culte.</p>
+      <a href="posts/marvel-serie.html" class="read-more">Lire</a>
+    </article>
+
+  </main>
+
+  <!-- 🔻 FOOTER -->
+  <footer>
+    <p style="font-size:13px; color:#888;">
+      © <span id="year"></span> PopCoaster. Tous droits réservés.
+      | <a href="mentions-legales.html" style="color:#ffcc00; text-decoration:none;">Mentions légales</a>
+      | <a href="a-propos.html" style="color:#ffcc00; text-decoration:none;">À propos</a>
+    </p>
+  </footer>
+
+  <!-- ✅ Script dynamique -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Filtrage des articles
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.article-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        articles.forEach(article => {
+          if (category === 'all' || article.getAttribute('data-category') === category) {
+            article.style.display = 'block';
+          } else {
+            article.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- ✅ Script menu mobile -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
