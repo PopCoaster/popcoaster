@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PopCoaster",
+    "description": "",
+    "home_page_url": "https://popcoaster.com",
+    "feed_url": "https://popcoaster.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Thibault Raoult"
+    },
+    "items": [
+    ]
+}
