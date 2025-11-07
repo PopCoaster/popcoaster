@@ -541,6 +541,71 @@ footer a {
   font-size: 0.95em;
   line-height: 1.6;
 }
+/* === FOOTER MODERNE === */
+footer {
+  background-color: #0c0c0c;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 204, 0, 0.2);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-content p {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffd633;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.footer-socials a {
+  font-size: 1.3em;
+  color: #ffcc00;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ffd633;
+  transform: scale(1.2);
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-socials a {
+    font-size: 1.2em;
+  }
+}
+
 
 
 
